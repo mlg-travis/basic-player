@@ -1,5 +1,5 @@
 import Player from './bitmovin';
-import { UIFactory } from 'bitmovin-player/bitmovinplayer-ui';
+import { UIFactory, DemoFactory } from 'mediaplayer-web-ui';
 import { PlayerEvent } from 'bitmovin-player/modules/bitmovinplayer-core';
 class MediaNetworkPlayer {
 
@@ -38,7 +38,9 @@ class MediaNetworkPlayer {
         
         let play = new Player(container, conf);
         this.player = play;
-        UIFactory.buildDefaultUI(this.player)
+        // UIFactory.buildDefaultUI(this.player)
+        console.log('zzz', DemoFactory);
+        DemoFactory.buildDemoABKBaselineVOD(this.player);
 
         return play;
     }

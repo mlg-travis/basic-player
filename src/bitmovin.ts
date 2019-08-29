@@ -19,8 +19,8 @@ import RemoteControl from 'bitmovin-player/modules/bitmovinplayer-remotecontrol'
 
 import SubtitlesWebVTT from 'bitmovin-player/modules/bitmovinplayer-subtitles-vtt';
 
-import {UIFactory} from 'bitmovin-player/bitmovinplayer-ui';
-import 'bitmovin-player/bitmovinplayer-ui.css';
+// import {UIFactory} from 'bitmovin-player/bitmovinplayer-ui';
+// import 'bitmovin-player/bitmovinplayer-ui.css';
 
 Player.addModule(EngineBitmovinModule);
 Player.addModule(MseRendererModule);
